@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <header>
+        <h1>Accueil</h1>
+        <section align="center">
+            <img src="assets/img/img1.jpg" alt="image1" width="1000" height="500">
+            <strong>
+                Bienvenue sur le site
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos impedit debitis alias ex unde quis recusandae mollitia vel minus quasi consectetur eveniet, labore eius nisi quos tenetur. At, laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos impedit debitis alias ex unde quis recusandae mollitia vel minus quasi consectetur eveniet, labore eius nisi quos tenetur. At, laboriosam!
+                </p>
+            </strong>
+        </section>
+        <br><br><br>
+        <table>  
+            <tr>
+                <td>
+                    <img src="assets/img/img2.jpg" alt="image2" width="500" height="300">
+                </td>
+                <td>
+                    <img src="assets/img/img3.jpg" alt="image3" width="500" height="300">
+                </td>
+                <td>
+                    <img src="assets/img/img4.jpg" alt="image4" width="500" height="300">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos impedit debitis alias ex unde quis recusandae mollitia vel minus quasi consectetur eveniet, labore eius nisi quos tenetur. At, laboriosam!
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos impedit debitis alias ex unde quis recusandae mollitia vel minus quasi consectetur eveniet, labore eius nisi quos tenetur. At, laboriosam!
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eos impedit debitis alias ex unde quis recusandae mollitia vel minus quasi consectetur eveniet, labore eius nisi quos tenetur. At, laboriosam!
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Button to navigate to inscription.html -->
+        <button onclick="window.location.href='inscription.html'">Inscription</button>
+      
+        <br/>
+        <br/>
+        <br/>
+        <!-- Google Maps iframe using the Google Maps Embed API -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.0805484484183!2d10.188156615131382!3d36.89922538392041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cbf4205a2da9%3A0xd9bcc077ddfbc0e!2sESPRIT%20Bloc%20E!5e0!3m2!1sen!2stn!4v1643551365013!5m2!1sen!2stn" width="1000" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+     </header>
+    <footer>
+       <!-- <div class="spacing"></div> --> 
+    <br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/>  
+        <p style="text-align: right; color: black; margin-right: 130px;"><strong>adresse: Esprit ghazela</strong></p>
+        <p style="text-align: right; color: black; margin-right: 50px;" ><strong>contacter nous <a href="mailto:contact@esprit.tn">sbissi.mohamed@esprit.tn</a></strong></p> 
+        <p style="text-align: right; color: black; margin-right: 50px;" ><strong>SiteWeb de Esprit engineering <a href="https://esprit.tn/">https://esprit.tn/</a></strong></p> 
+
+    </footer>
+    
+    <script>
+        (g => {
+            var h, a, k, p = "The Google Maps JavaScript API",
+                c = "google",
+                l = "importLibrary",
+                q = "__ib__",
+                m = document,
+                b = window;
+            b = b[c] || (b[c] = {});
+            var d = b.maps || (b.maps = {}),
+                r = new Set,
+                e = new URLSearchParams,
+                u = () => h || (h = new Promise(async(f, n) => {
+                await(a = m.createElement("script"));
+                e.set("libraries", [...r] + "");
+                for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                e.set("callback", c + ".maps." + q);
+                a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                d[q] = f;
+                a.onerror = () => h = n(Error(p + " could not load."));
+                a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                m.head.append(a)
+            }));
+            d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+        })({
+            key: "YOUR_API_KEY",
+            v: "weekly",
+        });
+    </script>
+</body>
+</html>

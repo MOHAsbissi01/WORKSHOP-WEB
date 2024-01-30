@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+     </style>
+   
+     <script>
+        function validateForm() {
+            var nom = document.getElementById("nom").value;
+            var prenom = document.getElementById("prenom").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var password2 = document.getElementById("password2").value;
+            var date = document.getElementById("date").value;
+            var telephone = document.getElementById("telephone").value;
+
+            // Validation du nom
+            if (nom.length < 2 || !/^[a-zA-Z]+$/.test(nom)) {
+                document.getElementById("nomError").innerHTML = "Veuillez entrer un nom valide (lettres uniquement et au moins 2 caractères)";
+                return false;
+            } else {
+                document.getElementById("nomError").innerHTML = "";
+            }
+
+            // Validation du prénom
+            if (prenom.length < 2 || !/^[a-zA-Z]+$/.test(prenom)) {
+                document.getElementById("prenomError").innerHTML = "Veuillez entrer un prénom valide (lettres uniquement et au moins 2 caractères)";
+                return false;
+            } else {
+                document.getElementById("prenomError").innerHTML = "";
+            }
+
+            // Validation de l'email (simple)
+            if (!email.includes("@")) {
+                document.getElementById("emailError").innerHTML = "Veuillez entrer une adresse email valide";
+                return false;
+            } else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+
+            // Validation du mot de passe
+            if (password.length < 8 || !/[a-z]/.test(password) || !/[A-Z]/.test(password) || !/\d/.test(password)) {
+                document.getElementById("passwordError").innerHTML = "Le mot de passe doit contenir au moins 8 caractères, incluant au moins une lettre minuscule, une lettre majuscule et un chiffre";
+                return false;
+            } else {
+                document.getElementById("passwordError").innerHTML = "";
+            }
+
+            // Validation de la confirmation du mot de passe
+            if (password !== password2) {
+                document.getElementById("password2Error").innerHTML = "Les mots de passe ne correspondent pas";
+                return false;
+            } else {
+                document.getElementById("password2Error").innerHTML = "";
+            }
+
+            // Validation du numéro de téléphone
+            if (telephone.length !== 8 || isNaN(telephone)) {
+                document.getElementById("telephoneError").innerHTML = "Veuillez entrer un numéro de téléphone valide (8 chiffres)";
+                return false;
+            } else {
+                document.getElementById("telephoneError").innerHTML = "";
+            }
+
+            // Autres validations à ajouter selon les besoins (comme la date de naissance)
+
+            return true;
+        } 
+    </script> 
+ 
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form onsubmit="return validateForm()">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <span class="error" id="nomError"></span><br>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <span class="error" id="prenomError"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span><br>
+
+        <label for="telephone">Téléphone:</label>
+        <input type="text" id="telephone" name="telephone" required>
+        <span class="error" id="telephoneError"></span><br>
+
+        <label for="date">Date de naissance:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error" id="passwordError"></span><br>
+
+        <label for="password2">Confirmer mot de passe:</label>
+        <input type="password" id="password2" name="password2" required>
+        <span class="error" id="password2Error"></span><br>
+
+        <input type="submit" value="Envoyer">
+
+        <p>Vous avez déjà un compte ? <a href="accueil.html">Connectez-vous ici</a>.</p>
+    </form>
+
+    <footer>
+         <br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/> <br/>
+         <p style="text-align: right; color: black; margin-right: 130px;"><strong>adresse: Esprit ghazela</strong></p>
+         <p style="text-align: right; color: black; margin-right: 50px;" ><strong>contacter nous <a href="mailto:contact@esprit.tn">sbissi.mohamed@esprit.tn</a></strong></p> 
+         <p style="text-align: right; color: black; margin-right: 50px;" ><strong>SiteWeb de Esprit engineering <a href="https://esprit.tn/">https://esprit.tn/</a></strong></p> 
+ 
+     </footer>
+</body>
+</html>

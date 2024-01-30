@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+strong {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section img {
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+table p {
+    margin-top: 10px;
+    color: #666;
+}
+ 
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+iframe {
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;  
+    display: block;  
+}
+
+footer {
+    background-image: url(' assets/img/LOGO.webp');   
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    padding: 20px;  
+    color: rgb(181, 22, 22);  
+}
+
+.spacing {
+    margin-bottom: 40px;  
+}
