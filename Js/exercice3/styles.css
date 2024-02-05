@@ -1,0 +1,13 @@
+ /* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#output {
+    margin-top: 20px;
+}
