@@ -1,11 +1,17 @@
 #HTML_CSS_JavaScript_PHP_SQL 
  
 #HTML Essential Tags 
+
 Common Tags :
+
 1."a" (Hyperlink): Defines a hyperlink to other web pages or resources.
+
 2."p"(Paragraph): Represents a block of text.
+
 3."h1" to "h6" (Headings): Provides hierarchical structure for headings.
+
 4."ul" (Unordered List): Creates a bulleted list.
+
 5."ol" (Ordered List): Creates a numbered list.
 6."img" (Image): Embeds images into your webpage.
 7."div" (Division): Specifies a section or container within the document.
