@@ -1,2 +1,2 @@
 # WORKSHOP-WEB
-This repository is for Educational purposes and all about WEB development.
+This repository serves educational purposes and focuses on WEB Development .
