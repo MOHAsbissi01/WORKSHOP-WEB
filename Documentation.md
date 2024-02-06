@@ -1,5 +1,5 @@
 #HTML_CSS_JavaScript_PHP_SQL 
------------------------------------------------------------------------------
+ 
 #HTML Essential Tags 
 Common Tags :
 1."a" (Hyperlink): Defines a hyperlink to other web pages or resources.
