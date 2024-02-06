@@ -25,7 +25,7 @@ Common Tags :
 
 10."form" (Form): Sets up user input forms.
   
-Special and Beautiful Tags:
+Special Tags:
 
 1."article": Represents a self-contained piece of content.
 
