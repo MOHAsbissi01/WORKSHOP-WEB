@@ -1,0 +1,22 @@
+header, footer {
+    border-top: 1px solid black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#Simg {
+    width: 2000px;
+    height: 500px;
+}
+
+.container {
+    text-align: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.correct-message {
+    color: green;
+  }
