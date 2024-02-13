@@ -1,7 +1,13 @@
+import { validate } from "validate.js";
+
+import { document } from 'some-package';
+// Add other necessary import statements here
+
 function validateForm() {
     var nom = document.forms["inscriptionForm"]["nom"].value;
     var prenom = document.forms["inscriptionForm"]["prenom"].value;
     var email = document.forms["inscriptionForm"]["email"].value;
+    
     var telephone = document.forms["inscriptionForm"]["telephone"].value;
     var dateNaissance = document.forms["inscriptionForm"]["dateNaissance"].value;
     var motDePasse = document.forms["inscriptionForm"]["motDePasse"].value;
