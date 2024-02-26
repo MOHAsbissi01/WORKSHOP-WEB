@@ -1,3 +1,4 @@
+
 let stars = document.getElementById("stars");
 let moon = document.getElementById("moon");
 let mountains3 = document.getElementById("mountains3");
@@ -18,4 +19,4 @@ window.onscroll = function(){
     river.style.top = value*0.5 + 'px' ;
     mountains7.style.top = value*0.5 + 'px' ;
 
-}  
+} 
