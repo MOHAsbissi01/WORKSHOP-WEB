@@ -45,8 +45,6 @@
             </tr>
         </table>
     </form>
-    <p style="color: red; font-weight: bold">WARNING: DO NOT INPUT YOUR REAL DATA, IT MAY BE STORED IN AN INSECURE DATABASE.</p>
-    <p>Because GitHub Pages doesn\'t support dynamic content, I redirected you to my own server 😎</p>
-</body>
+ </body>
 
 </html>
